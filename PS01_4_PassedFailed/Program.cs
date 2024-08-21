@@ -10,6 +10,15 @@ namespace PS01_4_PassedFailed
     {
         static void Main(string[] args)
         {
+            
+            Console.WriteLine("Input student's exam score");
+            int inputScore = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Condition(inputScore));
+
+        }
+        static string Condition(int inputScore)
+        {
+            return (inputScore >= 50) ? "Passed" : "Failed";
         }
     }
 }
